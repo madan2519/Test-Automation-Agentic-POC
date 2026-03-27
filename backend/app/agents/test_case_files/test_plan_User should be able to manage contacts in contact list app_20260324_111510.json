@@ -1,0 +1,250 @@
+{
+  "test_plan_id": "TP_User_71413a94",
+  "jira_id": "User should be able to manage contacts in contact list app",
+  "title": "Test Plan for User should be able to manage contacts in contact list app",
+  "description": "Automated test plan generated from structured requirements: User should be able to manage contacts in contact list app",
+  "platform": "WEB",
+  "framework": "Appium",
+  "test_cases": [
+    {
+      "test_case_id": "TC_User_001",
+      "title": "User Registration",
+      "description": "Test case for FR001 - ACAC001",
+      "priority": "Critical",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is on registration page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Enter valid user details",
+          "expected_result": "User is registered successfully",
+          "test_data": "Valid user details"
+        }
+      ],
+      "expected_outcome": "User is registered successfully",
+      "tags": [
+        "registration",
+        "authentication"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_002",
+      "title": "User Login",
+      "description": "Test case for FR001 - ACAC002",
+      "priority": "Critical",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is on login page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Enter valid user credentials",
+          "expected_result": "User is logged in successfully",
+          "test_data": "Valid user credentials"
+        }
+      ],
+      "expected_outcome": "User is logged in successfully",
+      "tags": [
+        "login",
+        "authentication"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_003",
+      "title": "Invalid User Login",
+      "description": "Test case for FR001 - ACAC003",
+      "priority": "Critical",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is on login page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Enter invalid user credentials",
+          "expected_result": "Error message is displayed",
+          "test_data": "Invalid user credentials"
+        }
+      ],
+      "expected_outcome": "User is not able to login and an error message is displayed",
+      "tags": [
+        "login",
+        "authentication"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_004",
+      "title": "Add New Contact",
+      "description": "Test case for FR002 - ACAC004",
+      "priority": "High",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is logged in and on the contacts page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Add a new contact with valid details",
+          "expected_result": "New contact is added successfully",
+          "test_data": "Valid contact details"
+        }
+      ],
+      "expected_outcome": "New contact is added successfully",
+      "tags": [
+        "contact_management"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_005",
+      "title": "Edit Existing Contact",
+      "description": "Test case for FR002 - ACAC005",
+      "priority": "High",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is logged in and on the contacts page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Edit an existing contact with valid details",
+          "expected_result": "Contact details are updated successfully",
+          "test_data": "Valid contact details"
+        }
+      ],
+      "expected_outcome": "Contact details are updated successfully",
+      "tags": [
+        "contact_management"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_006",
+      "title": "Delete Existing Contact",
+      "description": "Test case for FR002 - ACAC006",
+      "priority": "High",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is logged in and on the contacts page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Delete an existing contact",
+          "expected_result": "Contact is deleted successfully",
+          "test_data": "Existing contact"
+        }
+      ],
+      "expected_outcome": "Contact is deleted successfully",
+      "tags": [
+        "contact_management"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_007",
+      "title": "View Contacts List",
+      "description": "Test case for FR002 - ACAC007",
+      "priority": "High",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is logged in and on the contacts page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "View the list of contacts",
+          "expected_result": "All saved contacts are displayed",
+          "test_data": "N/A"
+        }
+      ],
+      "expected_outcome": "All saved contacts are displayed",
+      "tags": [
+        "contact_management"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_008",
+      "title": "Add New Contact with Invalid Details",
+      "description": "Test case for FR002 - ACAC008",
+      "priority": "High",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is logged in and on the contacts page",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Add a new contact with invalid details",
+          "expected_result": "Error message is displayed",
+          "test_data": "Invalid contact details"
+        }
+      ],
+      "expected_outcome": "New contact is not added and an error message is displayed",
+      "tags": [
+        "contact_management"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_009",
+      "title": "Data Persistence after Refresh/Re-login",
+      "description": "Test case for FR003 - ACAC009",
+      "priority": "Medium",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is logged in and has added a new contact",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Refresh the page or re-log into the system",
+          "expected_result": "All saved contacts are still available",
+          "test_data": "N/A"
+        }
+      ],
+      "expected_outcome": "All saved contacts are still available",
+      "tags": [
+        "data_persistence"
+      ],
+      "estimated_time": 15
+    },
+    {
+      "test_case_id": "TC_User_010",
+      "title": "Access Control for Contacts Page",
+      "description": "Test case for FR004 - ACAC010",
+      "priority": "High",
+      "status": "Pending",
+      "platform": "WEB",
+      "framework": "Appium",
+      "preconditions": "User is not logged in",
+      "test_steps": [
+        {
+          "step_number": 1,
+          "action": "Try to access the contacts page",
+          "expected_result": "User is redirected to the login page",
+          "test_data": "N/A"
+        }
+      ],
+      "expected_outcome": "User is redirected to the login page",
+      "tags": [
+        "access_control"
+      ],
+      "estimated_time": 15
+    }
+  ],
+  "total_test_cases": 10,
+  "created_at": "2026-03-24T11:15:10.150689",
+  "version": "1.0",
+  "coverage_areas": [
+    "functional",
+    "user-flows"
+  ]
+}

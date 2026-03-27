@@ -1,0 +1,327 @@
+
+========================================
+TEST PLAN: TEST PLAN FOR USER SHOULD BE ABLE TO MANAGE CONTACTS IN CONTACT LIST APP
+========================================
+
+Test Plan ID: TP_User_6bcad2b7
+Jira ID: User should be able to manage contacts in contact list app
+Platform: WEB
+Framework: Robot Framework
+Created: 2026-03-24T14:31:50.212548
+Total Test Cases: 11
+
+DESCRIPTION:
+Automated test plan generated from structured requirements: User should be able to manage contacts in contact list app
+
+COVERAGE AREAS:
+functional, user-flows
+
+----------------------------------------
+TEST CASES
+----------------------------------------
+
+
+TEST CASE 1: USER REGISTRATION
+========================================
+Test Case ID: TC_User_001
+Priority: TestCasePriority.CRITICAL
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: registration, authentication
+
+Description:
+Test case for FR001 ACAC001
+
+Preconditions:
+User is on registration page
+
+Expected Outcome:
+User is registered successfully
+
+TEST STEPS:
+
+Step 1:
+  Action: Enter valid user details
+  Expected Result: User is registered successfully
+  Test Data: Valid user details
+
+============================================================
+
+TEST CASE 2: USER LOGIN WITH VALID CREDENTIALS
+========================================
+Test Case ID: TC_User_002
+Priority: TestCasePriority.CRITICAL
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: login, authentication
+
+Description:
+Test case for FR001 ACAC002
+
+Preconditions:
+User is on login page
+
+Expected Outcome:
+User is logged in successfully
+
+TEST STEPS:
+
+Step 1:
+  Action: Enter valid user credentials
+  Expected Result: User is logged in successfully
+  Test Data: Valid user credentials
+
+============================================================
+
+TEST CASE 3: USER LOGIN WITH INVALID CREDENTIALS
+========================================
+Test Case ID: TC_User_003
+Priority: TestCasePriority.CRITICAL
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: login, authentication
+
+Description:
+Test case for FR001 ACAC003
+
+Preconditions:
+User is on login page
+
+Expected Outcome:
+User is not able to login and an error message is displayed
+
+TEST STEPS:
+
+Step 1:
+  Action: Enter invalid user credentials
+  Expected Result: Error message is displayed
+  Test Data: Invalid user credentials
+
+============================================================
+
+TEST CASE 4: ADD NEW CONTACT WITH VALID DETAILS
+========================================
+Test Case ID: TC_User_004
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: add, contact
+
+Description:
+Test case for FR002 ACAC004
+
+Preconditions:
+User is logged in and on the contacts page
+
+Expected Outcome:
+The new contact is added successfully
+
+TEST STEPS:
+
+Step 1:
+  Action: Add a new contact with valid details
+  Expected Result: The new contact is added successfully
+  Test Data: Valid contact details
+
+============================================================
+
+TEST CASE 5: EDIT EXISTING CONTACT WITH VALID DETAILS
+========================================
+Test Case ID: TC_User_005
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: edit, contact
+
+Description:
+Test case for FR002 ACAC005
+
+Preconditions:
+User is logged in and on the contacts page
+
+Expected Outcome:
+The contact is updated successfully
+
+TEST STEPS:
+
+Step 1:
+  Action: Edit an existing contact with valid details
+  Expected Result: The contact is updated successfully
+  Test Data: Valid contact details
+
+============================================================
+
+TEST CASE 6: DELETE EXISTING CONTACT
+========================================
+Test Case ID: TC_User_006
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: delete, contact
+
+Description:
+Test case for FR002 ACAC006
+
+Preconditions:
+User is logged in and on the contacts page
+
+Expected Outcome:
+The contact is deleted successfully
+
+TEST STEPS:
+
+Step 1:
+  Action: Delete an existing contact
+  Expected Result: The contact is deleted successfully
+  Test Data: Existing contact details
+
+============================================================
+
+TEST CASE 7: VIEW LIST OF CONTACTS
+========================================
+Test Case ID: TC_User_007
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: view, contact
+
+Description:
+Test case for FR002 ACAC007
+
+Preconditions:
+User is logged in and on the contacts page
+
+Expected Outcome:
+The list of contacts is displayed
+
+TEST STEPS:
+
+Step 1:
+  Action: View the list of contacts
+  Expected Result: The list of contacts is displayed
+  Test Data: N/A
+
+============================================================
+
+TEST CASE 8: ADD NEW CONTACT WITH INVALID DETAILS
+========================================
+Test Case ID: TC_User_008
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: add, contact
+
+Description:
+Test case for FR002 ACAC008
+
+Preconditions:
+User is logged in and on the contacts page
+
+Expected Outcome:
+The new contact is not added and an error message is displayed
+
+TEST STEPS:
+
+Step 1:
+  Action: Add a new contact with invalid details
+  Expected Result: Error message is displayed
+  Test Data: Invalid contact details
+
+============================================================
+
+TEST CASE 9: EDIT EXISTING CONTACT WITH INVALID DETAILS
+========================================
+Test Case ID: TC_User_009
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: edit, contact
+
+Description:
+Test case for FR002 ACAC009
+
+Preconditions:
+User is logged in and on the contacts page
+
+Expected Outcome:
+The contact is not updated and an error message is displayed
+
+TEST STEPS:
+
+Step 1:
+  Action: Edit an existing contact with invalid details
+  Expected Result: Error message is displayed
+  Test Data: Invalid contact details
+
+============================================================
+
+TEST CASE 10: DATA PERSISTENCE AFTER REFRESH/RE-LOGIN
+========================================
+Test Case ID: TC_User_010
+Priority: TestCasePriority.MEDIUM
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: data, persistence
+
+Description:
+Test case for FR003 ACAC010
+
+Preconditions:
+User is logged in and has added/edited/deleted contacts
+
+Expected Outcome:
+The changes made by the user are persisted
+
+TEST STEPS:
+
+Step 1:
+  Action: Refresh the page or re-log into the system
+  Expected Result: The changes made by the user are persisted
+  Test Data: N/A
+
+============================================================
+
+TEST CASE 11: ACCESS CONTROL FOR CONTACTS PAGE
+========================================
+Test Case ID: TC_User_011
+Priority: TestCasePriority.HIGH
+Platform: WEB
+Framework: Robot Framework
+Estimated Time: 15 minutes
+Tags: access, control
+
+Description:
+Test case for FR004 ACAC011
+
+Preconditions:
+User is not logged in
+
+Expected Outcome:
+User is not allowed to access the page and is redirected to the login page
+
+TEST STEPS:
+
+Step 1:
+  Action: Try to access the contacts page
+  Expected Result: User is redirected to the login page
+  Test Data: N/A
+
+============================================================
+
+========================================
+END OF TEST PLAN
+========================================
+Generated by AI Automation Platform
+Framework: Robot Framework
+Platform: WEB
+Language: Python
