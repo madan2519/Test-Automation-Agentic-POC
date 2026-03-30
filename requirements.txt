@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+langchain
+langgraph
+groq
+python-dotenv
+websockets
+pydantic
+httpx
+jira
+playwright
+selenium
+appium-python-client
+robotframework
+mcp
+pydantic-settings
+pytest
+# Playwright and pytest-playwright removed due to Python 3.14 compatibility issues
+# pytest-playwright
+# playwright
